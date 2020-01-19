@@ -1,20 +1,19 @@
-package day19.Text1;
+package day21.Demo.Demo;
 
-import java.io.Serializable;
-
-public class Student implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class Student {
+    private String className;
     private String name;
     private Integer age;
-    private String sex;
+    private Character sex;
 
     public Student() {
     }
 
-    public Student(String name, Integer age, String sex) {
+    public Student(String name, Integer age, Character sex, String className) {
         this.name = name;
         this.age = age;
         this.sex = sex;
+        this.className = className;
     }
 
     public String getName() {
@@ -33,20 +32,29 @@ public class Student implements Serializable {
         this.age = age;
     }
 
-    public String getSex() {
+    public Character getSex() {
         return sex;
     }
 
-    public void setSex(String sex) {
+    public void setSex(Character sex) {
         this.sex = sex;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
+                "className='" + className + '\'' +
+                ", name='" + name + '\'' +
                 ", age=" + age +
-                ", sex='" + sex + '\'' +
+                ", sex=" + sex +
                 '}';
     }
 }
