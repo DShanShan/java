@@ -54,8 +54,8 @@ public class Text {
         File f=new File("D:\\File");
         File(f);*/
 
-      File dir=new File("d:\\aaa");
-      printDir(dir);
+//      File dir=new File("d:\\aaa");
+//      printDir(dir);
 
     }
 
